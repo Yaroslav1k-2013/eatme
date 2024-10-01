@@ -42,7 +42,7 @@
 a.fb::before,
 a.tw:before,
 a.skype:before,
-span.adress-black:before,
+span.adres-black:before,
 span.phone-black:before {
     content: "";
     position: absolute;
@@ -82,7 +82,7 @@ a.skype:before {
     font-family: "Roboto";
 }
 
-.adres-black::before {
+span.adres-black::before {
     width: 12px;
     height: 17px;
     background: url(../img/adress-black.svg) no-repeat;
@@ -195,6 +195,7 @@ span.phone-black::before {
 }
 
 .about-us div {
+    position: relative;
     max-width: 270px;
     height: 260px;
     padding: 34px;
@@ -286,6 +287,10 @@ span.phone-black::before {
     margin: 0 auto;
 }
 
+.popular-eat p {
+    text-align: center;
+}
+
 .food-btn a {
     font-size: 14px;
     text-transform: uppercase;
@@ -299,24 +304,34 @@ span.phone-black::before {
     display: inline-block;
     padding: 12px 0;
     width: 150px;
+    color: #151517;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-transform: uppercase;
+    text-align: center;
     border-radius: 5px;
     background-color: #ffffff;
     border: 2px solid #f5ed08;
     transition: all .5s ease;
 }
 
-.food-cta:hover{
+.food-cta:hover {
     background-color: #f5ed08;
     transform: scale(1.05);
     border: 2px solid #f5ed08;
 }
 
-.food-img-block p{
-width: 20%;
-height: 175px;
+.food-img-block {
+    padding: 35px 0;
 }
 
-.food-img-block img{
+.food-img-block p {
+    width: 20%;
+    height: 175px;
+}
+
+.food-img-block img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -335,25 +350,37 @@ height: 175px;
     font-family: "Roboto";
     text-align: center;
 }
-
-.review::before {
-content: "";
-position: absolute;
-bottom: -10px;
-left: 50%;
-width: 20px;
-height: 20px;
-background-color: #fff;
-transform: translate(-50%) rotate(-45deg);
+.reviews h2 {
+    font-size: 36px;
+    line-height: 46px;
+    color: #151517;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    text-align: center;
+    padding-bottom: 30px;
+    text-align: center;
 }
-.reviews-img-container{
+.review::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    transform: translate(-50%) rotate(-45deg);
+}
+
+.reviews-img-container {
     padding: 25px 0 0;
 }
-.img-review{
+
+.img-review {
     width: 235px;
     margin: 0 auto;
 }
-.img-review picture{
+
+.img-review picture {
     width: 65px;
     height: 65px;
     border-radius: 35px;
@@ -361,13 +388,13 @@ transform: translate(-50%) rotate(-45deg);
     overflow: hidden;
 }
 
-.img-review img{
+.img-review img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.reviews-img-container > p:nth-child(2) {
+.reviews-img-container>p:nth-child(2) {
     font-size: 14px;
     color: #151517;
     font-weight: 700;
@@ -375,17 +402,19 @@ transform: translate(-50%) rotate(-45deg);
     text-align: center;
 }
 
-.reviews-img-container > p:nth-child(3) {
+.reviews-img-container>p:nth-child(3) {
     font-size: 13px;
     color: #878787;
     font-weight: 300;
     font-family: "Roboto";
     text-align: center;
 }
+
 .mini-btn {
     padding-top: 26px;
     text-align: center;
 }
+
 .mini-btn a {
     width: 8px;
     height: 8px;
@@ -399,23 +428,23 @@ transform: translate(-50%) rotate(-45deg);
     background-color: #f5ed08;
 }
 
-.map_container{
+.map_container {
     position: relative;
     min-height: 415px;
-    background: url(../img/b310ce0c-e28c-4200-9764-9b88621d0348.jpg) no-repeat center/cover;
+    background: url(../img/map.png) no-repeat center/cover;
 }
 
-.social_container-bottom{
+.social_container-bottom {
     position: absolute;
     top: 50%;
     left: 50%;
     padding: 31px 43px;
     min-width: 300px;
-height: 170px;
-border-radius: 8px;
-background-color: #151517;
-transform: translate(-50%, -50%);
-box-sizing: border-box;
+    height: 170px;
+    border-radius: 8px;
+    background-color: #151517;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
 }
 
 .social_container-bottom p {
@@ -426,9 +455,9 @@ box-sizing: border-box;
 
 .social_container-bottom a {
     font-size: 14px;
-color: #f5ed08;
-font-weight: 400;
-font-family: "Roboto";
+    color: #f5ed08;
+    font-weight: 400;
+    font-family: "Roboto";
 }
 
 .bottom-line {
@@ -439,56 +468,56 @@ font-family: "Roboto";
 .bottom-logo p:first-child {
     padding-bottom: 33px;
     font-size: 30px;
-color: #ffffff;
-font-weight: 700;
-font-family: "Roboto Slab";
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto Slab";
 }
 
 .bottom-logo p:last-child {
     font-size: 13px;
-color: #878787;
-font-weight: 300;
-font-family: "Roboto";
+    color: #878787;
+    font-weight: 300;
+    font-family: "Roboto";
 }
 
-.bottom-title{
+.bottom-title {
     padding-bottom: 33px;
     font-size: 14px;
-letter-spacing: 1px;
-text-transform: uppercase;
-color: #f1f1f3;
-font-weight: 700;
-font-family: "Roboto Slab";
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #f1f1f3;
+    font-weight: 700;
+    font-family: "Roboto Slab";
 }
 
 .footer-nav a {
     display: inline-block;
     padding-bottom: 18px;
     font-size: 14px;
-color: #fff;
-font-weight: 400;
-font-family: "Roboto";
-transition: all .5s ease;
+    color: #fff;
+    font-weight: 400;
+    font-family: "Roboto";
+    transition: all .5s ease;
 }
 
 .footer-nav a:hover {
-    color:#f5ed08 
+    color: #f5ed08
 }
+
 .social_container_bottom p {
     justify-content: flex-start;
     column-gap: 19px;
     padding-bottom: 16px;
 }
-.social_container_bottom a{
-color: #fff;
-font-size: 14px;
-color: #f1f1f3;
-font-weight: 400;
-font-family: "Roboto"
+
+.social_container_bottom a {
+    color: #fff;
+    font-size: 14px;
+    color: #f1f1f3;
+    font-weight: 400;
+    font-family: "Roboto"
 }
 
 .bottom-social-btn .social ul {
     justify-content: flex-start;
 }
-
-
